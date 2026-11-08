@@ -9,6 +9,7 @@ const commitHash = execSync('git rev-parse --short HEAD').toString().trim();
 
 // https://vitejs.dev/config https://vitest.dev/config
 export default defineConfig({
+  base: '/',
   plugins: [react(), tsconfigPaths()],
   define: {
     'process.env': {},
